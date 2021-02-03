@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "sc-permissions-tree-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/scPermissionsTree/ScPermissionsTreeWebPart.js",
+          "manifest": "./src/webparts/scPermissionsTree/ScPermissionsTreeWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "vue": "./node_modules/vue/dist/vue.min.js"
+  },
+  "localizedResources": {
+    "ScPermissionsTreeWebPartStrings": "lib/webparts/scPermissionsTree/loc/{locale}.js"
+  }
+}
