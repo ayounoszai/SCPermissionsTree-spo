@@ -11,7 +11,7 @@
       </div>
        <el-divider class='divider'></el-divider>
       <div v-for="link in links" :key="link.url" class='popper'>
-        <el-link  target="_blank" :href="link.url" :underline="false">{{link.title}}</el-link>
+        <el-link  target="_blank" :href="link.url" :underline="false" data-interception="off">{{link.title}}</el-link>
       </div>      
   </div>
 </template>
